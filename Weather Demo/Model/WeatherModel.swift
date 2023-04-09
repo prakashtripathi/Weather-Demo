@@ -9,7 +9,7 @@ import Foundation
 
 class WeatherModel {
     
-    private var lang = Locale.current.languageCode
+    private var lang = Locale.current.language.languageCode?.identifier
     var lat: Double?
     var lon: Double?
     var currentWeather: CurrentWeather?
